@@ -8,6 +8,8 @@ See more detailed study notes in [this google doc](https://docs.google.com/docum
 - [ReplicaSet Config file](./replicaset-def.yml) - skeleton of a ReplicaSet definition file
 - [Deployment Config file](./deployment-def.yml) - skeleton of a Deployment definition file
 - [Service Definition files](./service/)
+- [Namespace Definition file](./namespace.yaml)
+- [Resource Quota Definition file](./resource-quota-def.yml)
 
 
 ## Shortcuts
@@ -35,4 +37,8 @@ To save time avoid writting up the definition files from scratch, here are som r
 Then apply the changes with:
     ```bash
     kubectl apply -f nginx-deployment.yaml
+    ```
+To verify the correctness of a definition file, use this flag:
+    ```bash 
+    --dry-run=client
     ```
