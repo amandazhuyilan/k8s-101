@@ -1,0 +1,20 @@
+apiVersion: v2 # v1 is using Helm 2
+appVersion: 0.0.1
+version: 1.0.0
+name: wordpress
+description: amanda's wordpress
+type: application # or library - provides utilities to create charts
+dependencies:
+  - condition: mariadb.enabled
+    name: mariadb.enabled
+    repository: https://charts.gitnamo.com/bitnami
+    version: 9.x.x
+keywords:
+  - application
+  - blog
+  - wordpress
+maintainers:
+  - email: amandazhutyilan@gmail.com
+    name: amanda
+home: https://url.to.repo
+icon: https://url.to.icon

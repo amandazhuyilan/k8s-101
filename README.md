@@ -10,6 +10,8 @@ See more detailed study notes in [this google doc](https://docs.google.com/docum
 - [Service Definition files](./service/)
 - [Namespace Definition file](./namespace.yaml)
 - [Resource Quota Definition file](./resource-quota-def.yml)
+- [Manual Scheduler for Pod Definition file](./manual-scheduler.yml)
+- [Helm Chart Definition file](./chart.yaml)]
 
 
 ## Shortcuts
