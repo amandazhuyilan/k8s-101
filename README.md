@@ -35,10 +35,13 @@ To save time avoid writting up the definition files from scratch, here are som r
     ```
 
 Then apply the changes with:
-    ```bash
-    kubectl apply -f nginx-deployment.yaml
-    ```
-To verify the correctness of a definition file, use this flag:
+
+```bash
+kubectl apply -f nginx-deployment.yaml
+```
+
+- To verify the correctness of a definition file, use this flag:
+
     ```bash 
     --dry-run=client
     ```
