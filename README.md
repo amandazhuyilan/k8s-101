@@ -13,6 +13,7 @@ See more detailed study notes in [this google doc](https://docs.google.com/docum
 - [Manual Scheduler for Pod Definition file](./manual-scheduler.yml)
 - [Helm Chart Definition file](./chart.yaml)
 - [Resource requests and limits](./resource.yaml)
+- [DaemonSet](./daemonset-def.yml)
 
 
 ## Shortcuts
