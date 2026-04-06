@@ -11,7 +11,8 @@ See more detailed study notes in [this google doc](https://docs.google.com/docum
 - [Namespace Definition file](./namespace.yaml)
 - [Resource Quota Definition file](./resource-quota-def.yml)
 - [Manual Scheduler for Pod Definition file](./manual-scheduler.yml)
-- [Helm Chart Definition file](./chart.yaml)]
+- [Helm Chart Definition file](./chart.yaml)
+- [Resource requests and limits](./resource.yaml)
 
 
 ## Shortcuts
@@ -47,3 +48,8 @@ kubectl apply -f nginx-deployment.yaml
     ```bash 
     --dry-run=client
     ```
+
+- To see which pods are running on which nodes, do:
+```bash
+kubectl get pods -o wide
+```
