@@ -6,11 +6,11 @@ spec:
   selector:
     matchLabels:
       app: monitoring-app
-    template:
-      metadata:
-        labels:
-          app: monitoring-app
-      spec:
-        containers:
-        - name: monitoring-app
-          image: monitoring-app
+  template:
+    metadata:
+      labels:
+        app: monitoring-app
+    spec:
+      containers:
+      - name: monitoring-app
+        image: monitoring-app
