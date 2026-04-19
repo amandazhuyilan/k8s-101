@@ -14,6 +14,7 @@ See more detailed study notes in [this google doc](https://docs.google.com/docum
 - [Helm Chart Definition file](./chart.yaml)
 - [Resource requests and limits](./resource.yaml)
 - [DaemonSet](./daemonset-def.yml)
+- [PriorityClasses](priority-class-def.yaml)
 
 
 ## Shortcuts
@@ -53,4 +54,25 @@ kubectl apply -f nginx-deployment.yaml
 - To see which pods are running on which nodes, do:
 ```bash
 kubectl get pods -o wide
+```
+
+- To see which pod is being scheduled by which scheduler, do:
+```bash
+kubectrl get events -o wide
+```
+
+- To get all static pods, do:
+```bash
+kubectl get pods -A
+```
+and look for those with `-<NodeName>` appended in the name.
+
+- To create a namespace, do:
+```bash
+kubectl create ns <namespace-name>
+```
+
+- To see which nodes the applications are running on, do
+```bash
+kubectrl get pods -o wide
 ```

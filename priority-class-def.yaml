@@ -1,0 +1,8 @@
+apiVersion: scheduling.k8s.io/v1
+kind: PriorityClass
+metadata:
+  name: high-priority
+value: 1000000000
+description: "Priority lcass for mission critical pod"
+globalDefault: true # used to define the default priority of all pods, if not then default priority is 0
+preemptionPolicy: PreemptLowerPriority
